@@ -4,79 +4,160 @@
     "user_id": "user-001",
     "event_type": "click",
     "page": "/home",
-    "timestamp": "2025-04-01T10:15:00Z",
+    "timestamp": "2025-04-02T08:00:00Z",
     "device_type": "mobile"
   },
   {
     "event_id": "evt-002",
-    "user_id": "user-002",
+    "user_id": null,
     "event_type": "scroll",
     "page": "/products",
-    "timestamp": "2025-04-01T10:16:00Z",
+    "timestamp": "2025-04-02T08:01:00Z",
     "device_type": "desktop"
   },
   {
     "event_id": "evt-003",
     "user_id": "user-003",
-    "event_type": "click",
-    "page": "/cart",
-    "timestamp": "2025-04-01T10:17:00Z",
-    "device_type": "mobile"
-  },
-  {
-    "event_id": "evt-004",
-    "user_id": "user-001",
-    "event_type": "purchase",
-    "page": "/checkout",
-    "timestamp": "2025-04-01T10:18:00Z",
+    "event_type": "",
+    "page": "/about",
+    "timestamp": "2025-04-02T08:02:00Z",
     "device_type": "tablet"
   },
   {
-    "event_id": "evt-005",
-    "user_id": "user-002",
+    "event_id": "evt-004",
+    "user_id": "user-004",
     "event_type": "click",
-    "page": "/products",
-    "timestamp": "2025-04-01T10:19:00Z",
-    "device_type": "desktop"
+    "page": "/home",
+    "timestamp": "04-02-2025 08:03",  
+    "device_type": "mobile"
+  },
+  {
+    "event_id": "evt-005",
+    "user_id": "user-005",
+    "event_type": "purchase",
+    "page": "/checkout",
+    "timestamp": "2025-04-02T08:04:00Z",
+    "device_type": "watch" 
   },
   {
     "event_id": "evt-006",
-    "user_id": "user-004",
+    "user_id": "user-001",
     "event_type": "scroll",
-    "page": "/home",
-    "timestamp": "2025-04-01T10:20:00Z",
+    "page": "/cart",
+    "timestamp": "2025-04-02T08:05:00Z",
     "device_type": "mobile"
   },
   {
     "event_id": "evt-007",
-    "user_id": "user-005",
+    "user_id": "user-002",
     "event_type": "click",
-    "page": "/about",
-    "timestamp": "2025-04-01T10:21:00Z",
-    "device_type": "mobile"
-  },
-  {
-    "event_id": "evt-008",
-    "user_id": "user-006",
-    "event_type": "purchase",
-    "page": "/checkout",
-    "timestamp": "2025-04-01T10:22:00Z",
+    "page": "/home",
+    "timestamp": "2025-04-02T08:06:00Z",
     "device_type": "desktop"
   },
   {
-    "event_id": "evt-009",
-    "user_id": "user-007",
+    "event_id": "evt-008",
+    "user_id": "user-003",
     "event_type": "click",
-    "page": "/search",
-    "timestamp": "2025-04-01T10:23:00Z",
-    "device_type": "tablet"
+    "page": "/about",
+    "timestamp": "2025-04-02T08:07:00Z",
+    "device_type": "mobile"
+  },
+  {
+    "event_id": "evt-009",
+    "user_id": "user-003",
+    "event_type": "scroll",
+    "page": "/about",
+    "timestamp": "2025-04-02T08:08:00Z",
+    "device_type": "mobile"
   },
   {
     "event_id": "evt-010",
     "user_id": "user-003",
+    "event_type": "scroll",
+    "page": "/about",
+    "timestamp": "2025-04-02T08:08:30Z",
+    "device_type": "console"  
+  },
+  {
+    "event_id": "evt-010", 
+    "user_id": "user-003",
+    "event_type": "scroll",
+    "page": "/about",
+    "timestamp": "2025-04-02T08:09:00Z",
+    "device_type": "console"
+  },
+  {
+    "event_id": "evt-011",
+    "user_id": "user-999",
     "event_type": "click",
-    "page": "/cart",
-    "timestamp": "2025-04-01T10:24:00Z",
+    "page": "/debug",
+    "timestamp": "2025-04-02T08:10:00Z",
+    "device_type": "mobile"
+  },
+  {
+    "event_id": "evt-012",
+    "user_id": "user-003",
+    "event_type": "click",
+    "page": "/home",
+    "timestamp": "2025-04-02T08:11:00Z",
+    "device_type": "mobile"
+  },
+  {
+    "event_id": "evt-013",
+    "user_id": "user-003",
+    "event_type": "click",
+    "page": "/home",
+    "timestamp": "2025-04-02T08:12:00Z",
+    "device_type": "mobile"
+  },
+  {
+    "event_id": "evt-014",
+    "user_id": "user-003",
+    "event_type": "click",
+    "page": "/home",
+    "timestamp": "2025-04-02T08:13:00Z",
+    "device_type": "mobile"
+  },
+  {
+    "event_id": "evt-015",
+    "user_id": "user-003",
+    "event_type": "click",
+    "page": "/home",
+    "timestamp": "2025-04-02T08:14:00Z",
+    "device_type": "mobile"
+  },
+  {
+    "event_id": "evt-016",
+    "user_id": "user-003",
+    "event_type": "click",
+    "page": "/home",
+    "timestamp": "2025-04-02T08:15:00Z",
+    "device_type": "mobile"
+  },
+  {
+    "event_id": "evt-017",
+    "user_id": "user-003",
+    "event_type": "click",
+    "page": "/home",
+    "timestamp": "2025-04-02T08:16:00Z",
+    "device_type": "mobile"
+  },
+  {
+    "event_id": "evt-018",
+    "user_id": "user-003",
+    "event_type": "click",
+    "page": "/home",
+    "timestamp": "2025-04-02T08:17:00Z",
+    "device_type": "mobile"
+  },
+  {
+    "event_id": "evt-019",
+    "user_id": "user-003",
+    "event_type": "click",
+    "page": "/home",
+    "timestamp": "2025-04-02T08:18:00Z",
     "device_type": "mobile"
   }
 ]
+

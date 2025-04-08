@@ -2162,3 +2162,724 @@ GROUP BY 1, 2, 3
 [0m13:22:25.533702 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb7339f7160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb73393fb50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb6fc38ff40>]}
 [0m13:22:25.534275 [debug] [MainThread]: Flushing usage events
 [0m13:22:26.446538 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:58:29.875930 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f21862c71f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f215d85a170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f215d85a110>]}
+
+
+============================== 19:58:29.878720 | a8a3f6e2-9ed9-43b1-9bed-2d30f8782f04 ==============================
+[0m19:58:29.878720 [info ] [MainThread]: Running with dbt=1.9.3
+[0m19:58:29.879443 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/kourosh/.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/home/kourosh/user_event_pipeline/dbt/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt test', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m19:58:31.178417 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a8a3f6e2-9ed9-43b1-9bed-2d30f8782f04', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2188153a90>]}
+[0m19:58:31.251277 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a8a3f6e2-9ed9-43b1-9bed-2d30f8782f04', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f215df19060>]}
+[0m19:58:31.252918 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m19:58:31.427240 [debug] [MainThread]: checksum: 5671c00892cdbcef29c3b00cc5ba7510c3d18a35c883caeb9ab9ee266dc29c8f, vars: {}, profile: , target: , version: 1.9.3
+[0m19:58:31.592024 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m19:58:31.592637 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m19:58:31.600160 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_user_events.example
+[0m19:58:31.657515 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a8a3f6e2-9ed9-43b1-9bed-2d30f8782f04', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f214e684d90>]}
+[0m19:58:31.776088 [debug] [MainThread]: Wrote artifact WritableManifest to /home/kourosh/user_event_pipeline/dbt/target/manifest.json
+[0m19:58:31.778044 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/kourosh/user_event_pipeline/dbt/target/semantic_manifest.json
+[0m19:58:31.798580 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a8a3f6e2-9ed9-43b1-9bed-2d30f8782f04', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f214e66a680>]}
+[0m19:58:31.799336 [info ] [MainThread]: Found 6 models, 6 data tests, 1 source, 605 macros
+[0m19:58:31.799913 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a8a3f6e2-9ed9-43b1-9bed-2d30f8782f04', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f214f04b7f0>]}
+[0m19:58:31.801439 [info ] [MainThread]: 
+[0m19:58:31.802010 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m19:58:31.802587 [info ] [MainThread]: 
+[0m19:58:31.803287 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m19:58:31.808742 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_user-event-pipeline_bq_user_events'
+[0m19:58:31.809426 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:58:32.487270 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a8a3f6e2-9ed9-43b1-9bed-2d30f8782f04', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f214eab8100>]}
+[0m19:58:32.488481 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:58:32.536624 [debug] [Thread-1 (]: Began running node test.dbt_user_events.not_null_hub_event_event_id.e0ec02412d
+[0m19:58:32.537821 [info ] [Thread-1 (]: 1 of 6 START test not_null_hub_event_event_id .................................. [RUN]
+[0m19:58:32.538757 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_user-event-pipeline_bq_user_events, now test.dbt_user_events.not_null_hub_event_event_id.e0ec02412d)
+[0m19:58:32.539310 [debug] [Thread-1 (]: Began compiling node test.dbt_user_events.not_null_hub_event_event_id.e0ec02412d
+[0m19:58:32.560442 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_user_events.not_null_hub_event_event_id.e0ec02412d"
+[0m19:58:32.561267 [debug] [Thread-1 (]: Began executing node test.dbt_user_events.not_null_hub_event_event_id.e0ec02412d
+[0m19:58:32.584010 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_user_events.not_null_hub_event_event_id.e0ec02412d"
+[0m19:58:32.584962 [debug] [Thread-1 (]: On test.dbt_user_events.not_null_hub_event_event_id.e0ec02412d: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_user_events", "target_name": "dev", "node_id": "test.dbt_user_events.not_null_hub_event_event_id.e0ec02412d"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select event_id
+from `user-event-pipeline`.`bq_user_events`.`hub_event`
+where event_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m19:58:32.585590 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:58:33.712995 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=user-event-pipeline&j=bq:EU:266f2de7-03f4-45f3-b5b0-fbd90a9ebc66&page=queryresults
+[0m19:58:34.453761 [info ] [Thread-1 (]: 1 of 6 PASS not_null_hub_event_event_id ........................................ [[32mPASS[0m in 1.91s]
+[0m19:58:34.460281 [debug] [Thread-1 (]: Finished running node test.dbt_user_events.not_null_hub_event_event_id.e0ec02412d
+[0m19:58:34.463755 [debug] [Thread-1 (]: Began running node test.dbt_user_events.not_null_hub_user_user_id.2d4c18c8f3
+[0m19:58:34.466784 [info ] [Thread-1 (]: 2 of 6 START test not_null_hub_user_user_id .................................... [RUN]
+[0m19:58:34.469462 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_user_events.not_null_hub_event_event_id.e0ec02412d, now test.dbt_user_events.not_null_hub_user_user_id.2d4c18c8f3)
+[0m19:58:34.471636 [debug] [Thread-1 (]: Began compiling node test.dbt_user_events.not_null_hub_user_user_id.2d4c18c8f3
+[0m19:58:34.481038 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_user_events.not_null_hub_user_user_id.2d4c18c8f3"
+[0m19:58:34.481836 [debug] [Thread-1 (]: Began executing node test.dbt_user_events.not_null_hub_user_user_id.2d4c18c8f3
+[0m19:58:34.486616 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_user_events.not_null_hub_user_user_id.2d4c18c8f3"
+[0m19:58:34.487545 [debug] [Thread-1 (]: On test.dbt_user_events.not_null_hub_user_user_id.2d4c18c8f3: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_user_events", "target_name": "dev", "node_id": "test.dbt_user_events.not_null_hub_user_user_id.2d4c18c8f3"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select user_id
+from `user-event-pipeline`.`bq_user_events`.`hub_user`
+where user_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m19:58:34.488203 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:58:35.557624 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=user-event-pipeline&j=bq:EU:f450cc7a-4294-4e94-b195-955c7536c3ee&page=queryresults
+[0m19:58:36.177934 [info ] [Thread-1 (]: 2 of 6 PASS not_null_hub_user_user_id .......................................... [[32mPASS[0m in 1.71s]
+[0m19:58:36.181369 [debug] [Thread-1 (]: Finished running node test.dbt_user_events.not_null_hub_user_user_id.2d4c18c8f3
+[0m19:58:36.183766 [debug] [Thread-1 (]: Began running node test.dbt_user_events.not_null_link_user_event_hub_event_id.3bcb9ac203
+[0m19:58:36.186323 [info ] [Thread-1 (]: 3 of 6 START test not_null_link_user_event_hub_event_id ........................ [RUN]
+[0m19:58:36.188872 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_user_events.not_null_hub_user_user_id.2d4c18c8f3, now test.dbt_user_events.not_null_link_user_event_hub_event_id.3bcb9ac203)
+[0m19:58:36.191077 [debug] [Thread-1 (]: Began compiling node test.dbt_user_events.not_null_link_user_event_hub_event_id.3bcb9ac203
+[0m19:58:36.207575 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_user_events.not_null_link_user_event_hub_event_id.3bcb9ac203"
+[0m19:58:36.210120 [debug] [Thread-1 (]: Began executing node test.dbt_user_events.not_null_link_user_event_hub_event_id.3bcb9ac203
+[0m19:58:36.216151 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_user_events.not_null_link_user_event_hub_event_id.3bcb9ac203"
+[0m19:58:36.217407 [debug] [Thread-1 (]: On test.dbt_user_events.not_null_link_user_event_hub_event_id.3bcb9ac203: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_user_events", "target_name": "dev", "node_id": "test.dbt_user_events.not_null_link_user_event_hub_event_id.3bcb9ac203"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select hub_event_id
+from `user-event-pipeline`.`bq_user_events`.`link_user_event`
+where hub_event_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m19:58:36.218379 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:58:37.710119 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=user-event-pipeline&j=bq:EU:d5bba14c-5c8c-4366-a632-1a243327730c&page=queryresults
+[0m19:58:38.324841 [info ] [Thread-1 (]: 3 of 6 PASS not_null_link_user_event_hub_event_id .............................. [[32mPASS[0m in 2.14s]
+[0m19:58:38.325843 [debug] [Thread-1 (]: Finished running node test.dbt_user_events.not_null_link_user_event_hub_event_id.3bcb9ac203
+[0m19:58:38.326506 [debug] [Thread-1 (]: Began running node test.dbt_user_events.not_null_link_user_event_hub_user_id.9aa782b95d
+[0m19:58:38.327232 [info ] [Thread-1 (]: 4 of 6 START test not_null_link_user_event_hub_user_id ......................... [RUN]
+[0m19:58:38.327911 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_user_events.not_null_link_user_event_hub_event_id.3bcb9ac203, now test.dbt_user_events.not_null_link_user_event_hub_user_id.9aa782b95d)
+[0m19:58:38.328493 [debug] [Thread-1 (]: Began compiling node test.dbt_user_events.not_null_link_user_event_hub_user_id.9aa782b95d
+[0m19:58:38.333699 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_user_events.not_null_link_user_event_hub_user_id.9aa782b95d"
+[0m19:58:38.334470 [debug] [Thread-1 (]: Began executing node test.dbt_user_events.not_null_link_user_event_hub_user_id.9aa782b95d
+[0m19:58:38.338462 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_user_events.not_null_link_user_event_hub_user_id.9aa782b95d"
+[0m19:58:38.339360 [debug] [Thread-1 (]: On test.dbt_user_events.not_null_link_user_event_hub_user_id.9aa782b95d: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_user_events", "target_name": "dev", "node_id": "test.dbt_user_events.not_null_link_user_event_hub_user_id.9aa782b95d"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select hub_user_id
+from `user-event-pipeline`.`bq_user_events`.`link_user_event`
+where hub_user_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m19:58:38.340007 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:58:39.244199 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=user-event-pipeline&j=bq:EU:02f78e73-41d3-49f3-bdf6-1e85b9c6af05&page=queryresults
+[0m19:58:39.659849 [info ] [Thread-1 (]: 4 of 6 PASS not_null_link_user_event_hub_user_id ............................... [[32mPASS[0m in 1.33s]
+[0m19:58:39.665492 [debug] [Thread-1 (]: Finished running node test.dbt_user_events.not_null_link_user_event_hub_user_id.9aa782b95d
+[0m19:58:39.670501 [debug] [Thread-1 (]: Began running node test.dbt_user_events.unique_hub_event_event_id.2f5fd502cd
+[0m19:58:39.675816 [info ] [Thread-1 (]: 5 of 6 START test unique_hub_event_event_id .................................... [RUN]
+[0m19:58:39.677588 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_user_events.not_null_link_user_event_hub_user_id.9aa782b95d, now test.dbt_user_events.unique_hub_event_event_id.2f5fd502cd)
+[0m19:58:39.678865 [debug] [Thread-1 (]: Began compiling node test.dbt_user_events.unique_hub_event_event_id.2f5fd502cd
+[0m19:58:39.691486 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_user_events.unique_hub_event_event_id.2f5fd502cd"
+[0m19:58:39.692433 [debug] [Thread-1 (]: Began executing node test.dbt_user_events.unique_hub_event_event_id.2f5fd502cd
+[0m19:58:39.696547 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_user_events.unique_hub_event_event_id.2f5fd502cd"
+[0m19:58:39.697516 [debug] [Thread-1 (]: On test.dbt_user_events.unique_hub_event_event_id.2f5fd502cd: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_user_events", "target_name": "dev", "node_id": "test.dbt_user_events.unique_hub_event_event_id.2f5fd502cd"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with dbt_test__target as (
+
+  select event_id as unique_field
+  from `user-event-pipeline`.`bq_user_events`.`hub_event`
+  where event_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m19:58:39.698193 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:58:40.778529 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=user-event-pipeline&j=bq:EU:c8941093-f485-46fa-8c46-dec1c0e70230&page=queryresults
+[0m19:58:41.294276 [info ] [Thread-1 (]: 5 of 6 PASS unique_hub_event_event_id .......................................... [[32mPASS[0m in 1.62s]
+[0m19:58:41.295190 [debug] [Thread-1 (]: Finished running node test.dbt_user_events.unique_hub_event_event_id.2f5fd502cd
+[0m19:58:41.295788 [debug] [Thread-1 (]: Began running node test.dbt_user_events.unique_hub_user_user_id.78f099b9b1
+[0m19:58:41.296523 [info ] [Thread-1 (]: 6 of 6 START test unique_hub_user_user_id ...................................... [RUN]
+[0m19:58:41.297219 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_user_events.unique_hub_event_event_id.2f5fd502cd, now test.dbt_user_events.unique_hub_user_user_id.78f099b9b1)
+[0m19:58:41.297783 [debug] [Thread-1 (]: Began compiling node test.dbt_user_events.unique_hub_user_user_id.78f099b9b1
+[0m19:58:41.302999 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_user_events.unique_hub_user_user_id.78f099b9b1"
+[0m19:58:41.303793 [debug] [Thread-1 (]: Began executing node test.dbt_user_events.unique_hub_user_user_id.78f099b9b1
+[0m19:58:41.309204 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_user_events.unique_hub_user_user_id.78f099b9b1"
+[0m19:58:41.310058 [debug] [Thread-1 (]: On test.dbt_user_events.unique_hub_user_user_id.78f099b9b1: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_user_events", "target_name": "dev", "node_id": "test.dbt_user_events.unique_hub_user_user_id.78f099b9b1"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with dbt_test__target as (
+
+  select user_id as unique_field
+  from `user-event-pipeline`.`bq_user_events`.`hub_user`
+  where user_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m19:58:41.310681 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:58:42.316488 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=user-event-pipeline&j=bq:EU:d349d220-a59c-4a55-963d-35fba03543d3&page=queryresults
+[0m19:58:42.731932 [error] [Thread-1 (]: 6 of 6 FAIL 3 unique_hub_user_user_id .......................................... [[31mFAIL 3[0m in 1.43s]
+[0m19:58:42.735395 [debug] [Thread-1 (]: Finished running node test.dbt_user_events.unique_hub_user_user_id.78f099b9b1
+[0m19:58:42.740026 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m19:58:42.808176 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:58:42.808830 [debug] [MainThread]: Connection 'test.dbt_user_events.unique_hub_user_user_id.78f099b9b1' was properly closed.
+[0m19:58:42.809405 [info ] [MainThread]: 
+[0m19:58:42.809968 [info ] [MainThread]: Finished running 6 data tests in 0 hours 0 minutes and 11.01 seconds (11.01s).
+[0m19:58:42.811669 [debug] [MainThread]: Command end result
+[0m19:58:42.849388 [debug] [MainThread]: Wrote artifact WritableManifest to /home/kourosh/user_event_pipeline/dbt/target/manifest.json
+[0m19:58:42.852352 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/kourosh/user_event_pipeline/dbt/target/semantic_manifest.json
+[0m19:58:42.863097 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/kourosh/user_event_pipeline/dbt/target/run_results.json
+[0m19:58:42.863674 [info ] [MainThread]: 
+[0m19:58:42.864240 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m19:58:42.864768 [info ] [MainThread]: 
+[0m19:58:42.865381 [error] [MainThread]: [31mFailure in test unique_hub_user_user_id (models/staging/schema.yml)[0m
+[0m19:58:42.865947 [error] [MainThread]:   Got 3 results, configured to fail if != 0
+[0m19:58:42.866429 [info ] [MainThread]: 
+[0m19:58:42.866984 [info ] [MainThread]:   compiled code at target/compiled/dbt_user_events/models/staging/schema.yml/unique_hub_user_user_id.sql
+[0m19:58:42.867495 [info ] [MainThread]: 
+[0m19:58:42.868029 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=1 SKIP=0 TOTAL=6
+[0m19:58:42.868877 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": false, "command_wall_clock_time": 13.054483, "process_in_blocks": "0", "process_kernel_time": 0.497036, "process_mem_max_rss": "263480", "process_out_blocks": "2704", "process_user_time": 4.910241}
+[0m19:58:42.869773 [debug] [MainThread]: Command `dbt test` failed at 19:58:42.869616 after 13.06 seconds
+[0m19:58:42.870466 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f21862c71f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f214e66bcd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f214e66a8f0>]}
+[0m19:58:42.871143 [debug] [MainThread]: Flushing usage events
+[0m19:58:43.644921 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:03:42.224466 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eff6a8431f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eff41dd6170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eff41dd6110>]}
+
+
+============================== 20:03:42.227269 | cdbd847d-ac7e-4dfd-9afb-7ee16fd52dc6 ==============================
+[0m20:03:42.227269 [info ] [MainThread]: Running with dbt=1.9.3
+[0m20:03:42.228103 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/home/kourosh/user_event_pipeline/dbt/logs', 'profiles_dir': '/home/kourosh/.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt test', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m20:03:43.498734 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'cdbd847d-ac7e-4dfd-9afb-7ee16fd52dc6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eff3307f550>]}
+[0m20:03:43.564836 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'cdbd847d-ac7e-4dfd-9afb-7ee16fd52dc6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eff3318f0a0>]}
+[0m20:03:43.565709 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m20:03:43.733735 [debug] [MainThread]: checksum: 5671c00892cdbcef29c3b00cc5ba7510c3d18a35c883caeb9ab9ee266dc29c8f, vars: {}, profile: , target: , version: 1.9.3
+[0m20:03:43.894539 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m20:03:43.895705 [debug] [MainThread]: Partial parsing: updated file: dbt_user_events://models/staging/schema.yml
+[0m20:03:44.464112 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_user_events.example
+[0m20:03:44.481072 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'cdbd847d-ac7e-4dfd-9afb-7ee16fd52dc6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eff42029c90>]}
+[0m20:03:44.598316 [debug] [MainThread]: Wrote artifact WritableManifest to /home/kourosh/user_event_pipeline/dbt/target/manifest.json
+[0m20:03:44.600328 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/kourosh/user_event_pipeline/dbt/target/semantic_manifest.json
+[0m20:03:44.620810 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'cdbd847d-ac7e-4dfd-9afb-7ee16fd52dc6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eff32bc60b0>]}
+[0m20:03:44.621526 [info ] [MainThread]: Found 6 models, 5 data tests, 1 source, 605 macros
+[0m20:03:44.622102 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cdbd847d-ac7e-4dfd-9afb-7ee16fd52dc6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eff33404a30>]}
+[0m20:03:44.623652 [info ] [MainThread]: 
+[0m20:03:44.624205 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m20:03:44.624709 [info ] [MainThread]: 
+[0m20:03:44.625393 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m20:03:44.631192 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_user-event-pipeline_bq_user_events'
+[0m20:03:44.631900 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:03:45.226275 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cdbd847d-ac7e-4dfd-9afb-7ee16fd52dc6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eff6c446ad0>]}
+[0m20:03:45.229767 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:03:45.288270 [debug] [Thread-1 (]: Began running node test.dbt_user_events.not_null_hub_event_event_id.e0ec02412d
+[0m20:03:45.288926 [info ] [Thread-1 (]: 1 of 5 START test not_null_hub_event_event_id .................................. [RUN]
+[0m20:03:45.289578 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_user-event-pipeline_bq_user_events, now test.dbt_user_events.not_null_hub_event_event_id.e0ec02412d)
+[0m20:03:45.290123 [debug] [Thread-1 (]: Began compiling node test.dbt_user_events.not_null_hub_event_event_id.e0ec02412d
+[0m20:03:45.310163 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_user_events.not_null_hub_event_event_id.e0ec02412d"
+[0m20:03:45.311232 [debug] [Thread-1 (]: Began executing node test.dbt_user_events.not_null_hub_event_event_id.e0ec02412d
+[0m20:03:45.334053 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_user_events.not_null_hub_event_event_id.e0ec02412d"
+[0m20:03:45.334936 [debug] [Thread-1 (]: On test.dbt_user_events.not_null_hub_event_event_id.e0ec02412d: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_user_events", "target_name": "dev", "node_id": "test.dbt_user_events.not_null_hub_event_event_id.e0ec02412d"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select event_id
+from `user-event-pipeline`.`bq_user_events`.`hub_event`
+where event_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m20:03:45.335548 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:03:46.445290 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=user-event-pipeline&j=bq:EU:0d08ff2c-7d04-47f5-b30b-6ede2c1a439f&page=queryresults
+[0m20:03:47.083882 [info ] [Thread-1 (]: 1 of 5 PASS not_null_hub_event_event_id ........................................ [[32mPASS[0m in 1.79s]
+[0m20:03:47.086645 [debug] [Thread-1 (]: Finished running node test.dbt_user_events.not_null_hub_event_event_id.e0ec02412d
+[0m20:03:47.088251 [debug] [Thread-1 (]: Began running node test.dbt_user_events.not_null_hub_user_user_id.2d4c18c8f3
+[0m20:03:47.089976 [info ] [Thread-1 (]: 2 of 5 START test not_null_hub_user_user_id .................................... [RUN]
+[0m20:03:47.091395 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_user_events.not_null_hub_event_event_id.e0ec02412d, now test.dbt_user_events.not_null_hub_user_user_id.2d4c18c8f3)
+[0m20:03:47.092534 [debug] [Thread-1 (]: Began compiling node test.dbt_user_events.not_null_hub_user_user_id.2d4c18c8f3
+[0m20:03:47.102882 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_user_events.not_null_hub_user_user_id.2d4c18c8f3"
+[0m20:03:47.103942 [debug] [Thread-1 (]: Began executing node test.dbt_user_events.not_null_hub_user_user_id.2d4c18c8f3
+[0m20:03:47.108022 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_user_events.not_null_hub_user_user_id.2d4c18c8f3"
+[0m20:03:47.108980 [debug] [Thread-1 (]: On test.dbt_user_events.not_null_hub_user_user_id.2d4c18c8f3: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_user_events", "target_name": "dev", "node_id": "test.dbt_user_events.not_null_hub_user_user_id.2d4c18c8f3"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select user_id
+from `user-event-pipeline`.`bq_user_events`.`hub_user`
+where user_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m20:03:47.109704 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:03:47.980288 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=user-event-pipeline&j=bq:EU:762db4d2-d1f6-4752-b206-0bd946293a5d&page=queryresults
+[0m20:03:48.602606 [info ] [Thread-1 (]: 2 of 5 PASS not_null_hub_user_user_id .......................................... [[32mPASS[0m in 1.51s]
+[0m20:03:48.605932 [debug] [Thread-1 (]: Finished running node test.dbt_user_events.not_null_hub_user_user_id.2d4c18c8f3
+[0m20:03:48.608450 [debug] [Thread-1 (]: Began running node test.dbt_user_events.not_null_link_user_event_hub_event_id.3bcb9ac203
+[0m20:03:48.612158 [info ] [Thread-1 (]: 3 of 5 START test not_null_link_user_event_hub_event_id ........................ [RUN]
+[0m20:03:48.614887 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_user_events.not_null_hub_user_user_id.2d4c18c8f3, now test.dbt_user_events.not_null_link_user_event_hub_event_id.3bcb9ac203)
+[0m20:03:48.617399 [debug] [Thread-1 (]: Began compiling node test.dbt_user_events.not_null_link_user_event_hub_event_id.3bcb9ac203
+[0m20:03:48.631423 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_user_events.not_null_link_user_event_hub_event_id.3bcb9ac203"
+[0m20:03:48.632746 [debug] [Thread-1 (]: Began executing node test.dbt_user_events.not_null_link_user_event_hub_event_id.3bcb9ac203
+[0m20:03:48.637837 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_user_events.not_null_link_user_event_hub_event_id.3bcb9ac203"
+[0m20:03:48.639091 [debug] [Thread-1 (]: On test.dbt_user_events.not_null_link_user_event_hub_event_id.3bcb9ac203: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_user_events", "target_name": "dev", "node_id": "test.dbt_user_events.not_null_link_user_event_hub_event_id.3bcb9ac203"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select hub_event_id
+from `user-event-pipeline`.`bq_user_events`.`link_user_event`
+where hub_event_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m20:03:48.640075 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:03:49.467285 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=user-event-pipeline&j=bq:EU:59fcc017-8852-42e1-8e51-01867a665c71&page=queryresults
+[0m20:03:50.036476 [info ] [Thread-1 (]: 3 of 5 PASS not_null_link_user_event_hub_event_id .............................. [[32mPASS[0m in 1.42s]
+[0m20:03:50.039825 [debug] [Thread-1 (]: Finished running node test.dbt_user_events.not_null_link_user_event_hub_event_id.3bcb9ac203
+[0m20:03:50.042277 [debug] [Thread-1 (]: Began running node test.dbt_user_events.not_null_link_user_event_hub_user_id.9aa782b95d
+[0m20:03:50.045998 [info ] [Thread-1 (]: 4 of 5 START test not_null_link_user_event_hub_user_id ......................... [RUN]
+[0m20:03:50.048559 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_user_events.not_null_link_user_event_hub_event_id.3bcb9ac203, now test.dbt_user_events.not_null_link_user_event_hub_user_id.9aa782b95d)
+[0m20:03:50.050843 [debug] [Thread-1 (]: Began compiling node test.dbt_user_events.not_null_link_user_event_hub_user_id.9aa782b95d
+[0m20:03:50.066746 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_user_events.not_null_link_user_event_hub_user_id.9aa782b95d"
+[0m20:03:50.068106 [debug] [Thread-1 (]: Began executing node test.dbt_user_events.not_null_link_user_event_hub_user_id.9aa782b95d
+[0m20:03:50.073540 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_user_events.not_null_link_user_event_hub_user_id.9aa782b95d"
+[0m20:03:50.074671 [debug] [Thread-1 (]: On test.dbt_user_events.not_null_link_user_event_hub_user_id.9aa782b95d: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_user_events", "target_name": "dev", "node_id": "test.dbt_user_events.not_null_link_user_event_hub_user_id.9aa782b95d"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select hub_user_id
+from `user-event-pipeline`.`bq_user_events`.`link_user_event`
+where hub_user_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m20:03:50.075536 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:03:50.745892 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=user-event-pipeline&j=bq:EU:b0170ac2-8e7d-4f2b-aff0-ac2e7df75c3c&page=queryresults
+[0m20:03:51.264561 [info ] [Thread-1 (]: 4 of 5 PASS not_null_link_user_event_hub_user_id ............................... [[32mPASS[0m in 1.21s]
+[0m20:03:51.268182 [debug] [Thread-1 (]: Finished running node test.dbt_user_events.not_null_link_user_event_hub_user_id.9aa782b95d
+[0m20:03:51.270623 [debug] [Thread-1 (]: Began running node test.dbt_user_events.unique_hub_event_event_id.2f5fd502cd
+[0m20:03:51.273136 [info ] [Thread-1 (]: 5 of 5 START test unique_hub_event_event_id .................................... [RUN]
+[0m20:03:51.275796 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_user_events.not_null_link_user_event_hub_user_id.9aa782b95d, now test.dbt_user_events.unique_hub_event_event_id.2f5fd502cd)
+[0m20:03:51.279617 [debug] [Thread-1 (]: Began compiling node test.dbt_user_events.unique_hub_event_event_id.2f5fd502cd
+[0m20:03:51.300282 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_user_events.unique_hub_event_event_id.2f5fd502cd"
+[0m20:03:51.301684 [debug] [Thread-1 (]: Began executing node test.dbt_user_events.unique_hub_event_event_id.2f5fd502cd
+[0m20:03:51.308138 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_user_events.unique_hub_event_event_id.2f5fd502cd"
+[0m20:03:51.309377 [debug] [Thread-1 (]: On test.dbt_user_events.unique_hub_event_event_id.2f5fd502cd: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_user_events", "target_name": "dev", "node_id": "test.dbt_user_events.unique_hub_event_event_id.2f5fd502cd"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with dbt_test__target as (
+
+  select event_id as unique_field
+  from `user-event-pipeline`.`bq_user_events`.`hub_event`
+  where event_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m20:03:51.310565 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:03:51.975057 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=user-event-pipeline&j=bq:EU:84ec79a5-8c2a-4424-a8fe-8f2e2da01cbf&page=queryresults
+[0m20:03:52.596598 [info ] [Thread-1 (]: 5 of 5 PASS unique_hub_event_event_id .......................................... [[32mPASS[0m in 1.32s]
+[0m20:03:52.599887 [debug] [Thread-1 (]: Finished running node test.dbt_user_events.unique_hub_event_event_id.2f5fd502cd
+[0m20:03:52.604272 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m20:03:52.675490 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:03:52.676096 [debug] [MainThread]: Connection 'test.dbt_user_events.unique_hub_event_event_id.2f5fd502cd' was properly closed.
+[0m20:03:52.676656 [info ] [MainThread]: 
+[0m20:03:52.677190 [info ] [MainThread]: Finished running 5 data tests in 0 hours 0 minutes and 8.05 seconds (8.05s).
+[0m20:03:52.678695 [debug] [MainThread]: Command end result
+[0m20:03:52.711626 [debug] [MainThread]: Wrote artifact WritableManifest to /home/kourosh/user_event_pipeline/dbt/target/manifest.json
+[0m20:03:52.713417 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/kourosh/user_event_pipeline/dbt/target/semantic_manifest.json
+[0m20:03:52.721222 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/kourosh/user_event_pipeline/dbt/target/run_results.json
+[0m20:03:52.721871 [info ] [MainThread]: 
+[0m20:03:52.722458 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m20:03:52.722971 [info ] [MainThread]: 
+[0m20:03:52.723490 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=0 SKIP=0 TOTAL=5
+[0m20:03:52.724271 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 10.559524, "process_in_blocks": "280", "process_kernel_time": 0.514426, "process_mem_max_rss": "268612", "process_out_blocks": "3944", "process_user_time": 5.295801}
+[0m20:03:52.725055 [debug] [MainThread]: Command `dbt test` succeeded at 20:03:52.724929 after 10.56 seconds
+[0m20:03:52.725618 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eff6a8431f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eff424ce230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eff32bc7130>]}
+[0m20:03:52.726189 [debug] [MainThread]: Flushing usage events
+[0m20:03:53.394781 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:04:07.899530 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5ea31cb250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5e7a9190c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5ea315a200>]}
+
+
+============================== 20:04:07.902601 | d35c5836-32a7-4c04-95c3-cf8e8cda18fa ==============================
+[0m20:04:07.902601 [info ] [MainThread]: Running with dbt=1.9.3
+[0m20:04:07.903343 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/kourosh/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/home/kourosh/user_event_pipeline/dbt/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m20:04:09.170116 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd35c5836-32a7-4c04-95c3-cf8e8cda18fa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5ea50572b0>]}
+[0m20:04:09.236662 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd35c5836-32a7-4c04-95c3-cf8e8cda18fa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5ea310e380>]}
+[0m20:04:09.237507 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m20:04:09.413286 [debug] [MainThread]: checksum: 5671c00892cdbcef29c3b00cc5ba7510c3d18a35c883caeb9ab9ee266dc29c8f, vars: {}, profile: , target: , version: 1.9.3
+[0m20:04:09.574275 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m20:04:09.574867 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m20:04:09.582821 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_user_events.example
+[0m20:04:09.641443 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd35c5836-32a7-4c04-95c3-cf8e8cda18fa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5e6b4c4a00>]}
+[0m20:04:09.759650 [debug] [MainThread]: Wrote artifact WritableManifest to /home/kourosh/user_event_pipeline/dbt/target/manifest.json
+[0m20:04:09.761503 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/kourosh/user_event_pipeline/dbt/target/semantic_manifest.json
+[0m20:04:09.771942 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd35c5836-32a7-4c04-95c3-cf8e8cda18fa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5e6b4c5db0>]}
+[0m20:04:09.772636 [info ] [MainThread]: Found 6 models, 5 data tests, 1 source, 605 macros
+[0m20:04:09.773227 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd35c5836-32a7-4c04-95c3-cf8e8cda18fa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5e6b4c75e0>]}
+[0m20:04:09.774681 [info ] [MainThread]: 
+[0m20:04:09.775251 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m20:04:09.775762 [info ] [MainThread]: 
+[0m20:04:09.776448 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m20:04:09.781689 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_user-event-pipeline'
+[0m20:04:09.782366 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:04:10.312222 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_user-event-pipeline, now list_user-event-pipeline_bq_user_events)
+[0m20:04:10.314738 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:04:11.030245 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd35c5836-32a7-4c04-95c3-cf8e8cda18fa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5e6b901c00>]}
+[0m20:04:11.031077 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:04:11.072720 [debug] [Thread-1 (]: Began running node model.dbt_user_events.hub_event
+[0m20:04:11.074064 [info ] [Thread-1 (]: 1 of 6 START sql table model bq_user_events.hub_event .......................... [RUN]
+[0m20:04:11.075224 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_user-event-pipeline_bq_user_events, now model.dbt_user_events.hub_event)
+[0m20:04:11.076257 [debug] [Thread-1 (]: Began compiling node model.dbt_user_events.hub_event
+[0m20:04:11.103909 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_user_events.hub_event"
+[0m20:04:11.104915 [debug] [Thread-1 (]: Began executing node model.dbt_user_events.hub_event
+[0m20:04:11.121343 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:04:11.691260 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_user_events.hub_event"
+[0m20:04:11.692181 [debug] [Thread-1 (]: On model.dbt_user_events.hub_event: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_user_events", "target_name": "dev", "node_id": "model.dbt_user_events.hub_event"} */
+
+  
+    
+
+    create or replace table `user-event-pipeline`.`bq_user_events`.`hub_event`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+SELECT DISTINCT
+  event_id,
+  to_hex(md5(cast(coalesce(cast(event_id as string), '_dbt_utils_surrogate_key_null_') as string))) AS hub_event_id,
+  CURRENT_TIMESTAMP() AS load_ts
+FROM `user-event-pipeline`.`bq_user_events`.`raw_events`
+WHERE event_id IS NOT NULL
+    );
+  
+[0m20:04:12.249213 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=user-event-pipeline&j=bq:EU:15f83ea1-7323-4417-a557-bf357974dc71&page=queryresults
+[0m20:04:15.113298 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd35c5836-32a7-4c04-95c3-cf8e8cda18fa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5e6b4c7d30>]}
+[0m20:04:15.114349 [info ] [Thread-1 (]: 1 of 6 OK created sql table model bq_user_events.hub_event ..................... [[32mCREATE TABLE (19.0 rows, 90.0 Bytes processed)[0m in 4.04s]
+[0m20:04:15.115492 [debug] [Thread-1 (]: Finished running node model.dbt_user_events.hub_event
+[0m20:04:15.116136 [debug] [Thread-1 (]: Began running node model.dbt_user_events.hub_user
+[0m20:04:15.116842 [info ] [Thread-1 (]: 2 of 6 START sql table model bq_user_events.hub_user ........................... [RUN]
+[0m20:04:15.117539 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_user_events.hub_event, now model.dbt_user_events.hub_user)
+[0m20:04:15.118116 [debug] [Thread-1 (]: Began compiling node model.dbt_user_events.hub_user
+[0m20:04:15.212457 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_user_events.hub_user"
+[0m20:04:15.213470 [debug] [Thread-1 (]: Began executing node model.dbt_user_events.hub_user
+[0m20:04:15.217300 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:04:15.632216 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_user_events.hub_user"
+[0m20:04:15.635605 [debug] [Thread-1 (]: On model.dbt_user_events.hub_user: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_user_events", "target_name": "dev", "node_id": "model.dbt_user_events.hub_user"} */
+
+  
+    
+
+    create or replace table `user-event-pipeline`.`bq_user_events`.`hub_user`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+SELECT DISTINCT
+  user_id,
+  to_hex(md5(cast(coalesce(cast(event_id as string), '_dbt_utils_surrogate_key_null_') as string))) AS hub_user_id,
+  CURRENT_TIMESTAMP() AS load_ts
+FROM `user-event-pipeline`.`bq_user_events`.`raw_events`
+WHERE user_id IS NOT NULL
+    );
+  
+[0m20:04:16.240983 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=user-event-pipeline&j=bq:EU:5b05cfd9-cb31-480e-a256-84d4890fe605&page=queryresults
+[0m20:04:18.411305 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd35c5836-32a7-4c04-95c3-cf8e8cda18fa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5e6925e1d0>]}
+[0m20:04:18.414684 [info ] [Thread-1 (]: 2 of 6 OK created sql table model bq_user_events.hub_user ...................... [[32mCREATE TABLE (25.0 rows, 190.0 Bytes processed)[0m in 3.29s]
+[0m20:04:18.418187 [debug] [Thread-1 (]: Finished running node model.dbt_user_events.hub_user
+[0m20:04:18.420545 [debug] [Thread-1 (]: Began running node model.dbt_user_events.link_user_event
+[0m20:04:18.423390 [info ] [Thread-1 (]: 3 of 6 START sql table model bq_user_events.link_user_event .................... [RUN]
+[0m20:04:18.426014 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_user_events.hub_user, now model.dbt_user_events.link_user_event)
+[0m20:04:18.428503 [debug] [Thread-1 (]: Began compiling node model.dbt_user_events.link_user_event
+[0m20:04:18.444055 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_user_events.link_user_event"
+[0m20:04:18.445474 [debug] [Thread-1 (]: Began executing node model.dbt_user_events.link_user_event
+[0m20:04:18.450251 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:04:18.908515 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_user_events.link_user_event"
+[0m20:04:18.911592 [debug] [Thread-1 (]: On model.dbt_user_events.link_user_event: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_user_events", "target_name": "dev", "node_id": "model.dbt_user_events.link_user_event"} */
+
+  
+    
+
+    create or replace table `user-event-pipeline`.`bq_user_events`.`link_user_event`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+SELECT DISTINCT
+  to_hex(md5(cast(coalesce(cast(user_id as string), '_dbt_utils_surrogate_key_null_') as string))) AS hub_user_id,
+  to_hex(md5(cast(coalesce(cast(event_id as string), '_dbt_utils_surrogate_key_null_') as string))) AS hub_event_id,
+  CURRENT_TIMESTAMP() AS load_ts
+FROM `user-event-pipeline`.`bq_user_events`.`raw_events`
+WHERE user_id IS NOT NULL AND event_id IS NOT NULL
+    );
+  
+[0m20:04:19.621969 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=user-event-pipeline&j=bq:EU:67394f70-609e-4224-bd58-65a246375c98&page=queryresults
+[0m20:04:21.784228 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd35c5836-32a7-4c04-95c3-cf8e8cda18fa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5e6b9ceb30>]}
+[0m20:04:21.787636 [info ] [Thread-1 (]: 3 of 6 OK created sql table model bq_user_events.link_user_event ............... [[32mCREATE TABLE (25.0 rows, 190.0 Bytes processed)[0m in 3.36s]
+[0m20:04:21.790785 [debug] [Thread-1 (]: Finished running node model.dbt_user_events.link_user_event
+[0m20:04:21.793130 [debug] [Thread-1 (]: Began running node model.dbt_user_events.sat_event_metadata
+[0m20:04:21.796067 [info ] [Thread-1 (]: 4 of 6 START sql table model bq_user_events.sat_event_metadata ................. [RUN]
+[0m20:04:21.798819 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_user_events.link_user_event, now model.dbt_user_events.sat_event_metadata)
+[0m20:04:21.801124 [debug] [Thread-1 (]: Began compiling node model.dbt_user_events.sat_event_metadata
+[0m20:04:21.814735 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_user_events.sat_event_metadata"
+[0m20:04:21.816522 [debug] [Thread-1 (]: Began executing node model.dbt_user_events.sat_event_metadata
+[0m20:04:21.823499 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:04:22.287839 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_user_events.sat_event_metadata"
+[0m20:04:22.290880 [debug] [Thread-1 (]: On model.dbt_user_events.sat_event_metadata: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_user_events", "target_name": "dev", "node_id": "model.dbt_user_events.sat_event_metadata"} */
+
+  
+    
+
+    create or replace table `user-event-pipeline`.`bq_user_events`.`sat_event_metadata`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+SELECT
+  to_hex(md5(cast(coalesce(cast(event_id as string), '_dbt_utils_surrogate_key_null_') as string))) AS hub_event_id,
+  event_type,
+  page,
+  device_type,
+  TIMESTAMP(timestamp) AS event_timestamp,
+  CURRENT_TIMESTAMP() AS load_ts
+FROM `user-event-pipeline`.`bq_user_events`.`raw_events`
+    );
+  
+[0m20:04:22.694096 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=user-event-pipeline&j=bq:EU:a7d2811c-6ee1-4936-abd3-2158352d0f5c&page=queryresults
+[0m20:04:26.077681 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd35c5836-32a7-4c04-95c3-cf8e8cda18fa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5e6b4d5120>]}
+[0m20:04:26.079529 [info ] [Thread-1 (]: 4 of 6 OK created sql table model bq_user_events.sat_event_metadata ............ [[32mCREATE TABLE (29.0 rows, 420.0 Bytes processed)[0m in 4.28s]
+[0m20:04:26.081364 [debug] [Thread-1 (]: Finished running node model.dbt_user_events.sat_event_metadata
+[0m20:04:26.082652 [debug] [Thread-1 (]: Began running node model.dbt_user_events.stg_raw_events
+[0m20:04:26.084153 [info ] [Thread-1 (]: 5 of 6 START sql view model bq_user_events.stg_raw_events ...................... [RUN]
+[0m20:04:26.085603 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_user_events.sat_event_metadata, now model.dbt_user_events.stg_raw_events)
+[0m20:04:26.086837 [debug] [Thread-1 (]: Began compiling node model.dbt_user_events.stg_raw_events
+[0m20:04:26.098774 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_user_events.stg_raw_events"
+[0m20:04:26.100283 [debug] [Thread-1 (]: Began executing node model.dbt_user_events.stg_raw_events
+[0m20:04:26.149507 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_user_events.stg_raw_events"
+[0m20:04:26.150577 [debug] [Thread-1 (]: On model.dbt_user_events.stg_raw_events: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_user_events", "target_name": "dev", "node_id": "model.dbt_user_events.stg_raw_events"} */
+
+
+  create or replace view `user-event-pipeline`.`bq_user_events`.`stg_raw_events`
+  OPTIONS()
+  as 
+
+SELECT
+  event_id,
+  user_id,
+  event_type,
+  page,
+  TIMESTAMP(timestamp) AS event_timestamp,
+  device_type
+FROM `user-event-pipeline`.`bq_user_events`.`raw_events`;
+
+
+[0m20:04:26.151867 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:04:26.995966 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=user-event-pipeline&j=bq:EU:6377bafd-4028-473e-8876-093a6d4bda82&page=queryresults
+[0m20:04:27.316893 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd35c5836-32a7-4c04-95c3-cf8e8cda18fa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5e7a940070>]}
+[0m20:04:27.320767 [info ] [Thread-1 (]: 5 of 6 OK created sql view model bq_user_events.stg_raw_events ................. [[32mCREATE VIEW (0 processed)[0m in 1.23s]
+[0m20:04:27.323969 [debug] [Thread-1 (]: Finished running node model.dbt_user_events.stg_raw_events
+[0m20:04:27.327825 [debug] [Thread-1 (]: Began running node model.dbt_user_events.daily_events
+[0m20:04:27.331668 [info ] [Thread-1 (]: 6 of 6 START sql table model bq_user_events.daily_events ....................... [RUN]
+[0m20:04:27.333865 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_user_events.stg_raw_events, now model.dbt_user_events.daily_events)
+[0m20:04:27.335582 [debug] [Thread-1 (]: Began compiling node model.dbt_user_events.daily_events
+[0m20:04:27.342426 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_user_events.daily_events"
+[0m20:04:27.344462 [debug] [Thread-1 (]: Began executing node model.dbt_user_events.daily_events
+[0m20:04:27.352174 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:04:27.732131 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_user_events.daily_events"
+[0m20:04:27.735160 [debug] [Thread-1 (]: On model.dbt_user_events.daily_events: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_user_events", "target_name": "dev", "node_id": "model.dbt_user_events.daily_events"} */
+
+  
+    
+
+    create or replace table `user-event-pipeline`.`bq_user_events`.`daily_events`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+SELECT
+  DATE(event_timestamp) AS event_date,
+  user_id,
+  device_type,
+  COUNT(*) AS event_count
+FROM `user-event-pipeline`.`bq_user_events`.`stg_raw_events`
+GROUP BY 1, 2, 3
+    );
+  
+[0m20:04:28.429305 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=user-event-pipeline&j=bq:EU:2aa7f13f-7dee-4a65-96bc-b4cb6e26a1ca&page=queryresults
+[0m20:04:31.000736 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd35c5836-32a7-4c04-95c3-cf8e8cda18fa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5e6b451390>]}
+[0m20:04:31.004054 [info ] [Thread-1 (]: 6 of 6 OK created sql table model bq_user_events.daily_events .................. [[32mCREATE TABLE (16.0 rows, 263.0 Bytes processed)[0m in 3.67s]
+[0m20:04:31.007397 [debug] [Thread-1 (]: Finished running node model.dbt_user_events.daily_events
+[0m20:04:31.012382 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m20:04:31.083991 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:04:31.084635 [debug] [MainThread]: Connection 'model.dbt_user_events.daily_events' was properly closed.
+[0m20:04:31.085235 [info ] [MainThread]: 
+[0m20:04:31.085803 [info ] [MainThread]: Finished running 5 table models, 1 view model in 0 hours 0 minutes and 21.31 seconds (21.31s).
+[0m20:04:31.087528 [debug] [MainThread]: Command end result
+[0m20:04:31.121426 [debug] [MainThread]: Wrote artifact WritableManifest to /home/kourosh/user_event_pipeline/dbt/target/manifest.json
+[0m20:04:31.123234 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/kourosh/user_event_pipeline/dbt/target/semantic_manifest.json
+[0m20:04:31.131023 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/kourosh/user_event_pipeline/dbt/target/run_results.json
+[0m20:04:31.131593 [info ] [MainThread]: 
+[0m20:04:31.132199 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m20:04:31.132823 [info ] [MainThread]: 
+[0m20:04:31.133377 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=0 SKIP=0 TOTAL=6
+[0m20:04:31.134139 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 23.29524, "process_in_blocks": "0", "process_kernel_time": 0.564067, "process_mem_max_rss": "261748", "process_out_blocks": "2704", "process_user_time": 5.188622}
+[0m20:04:31.134836 [debug] [MainThread]: Command `dbt run` succeeded at 20:04:31.134727 after 23.30 seconds
+[0m20:04:31.135382 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5ea31cb250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5e6b431870>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5e6b4316c0>]}
+[0m20:04:31.135944 [debug] [MainThread]: Flushing usage events
+[0m20:04:32.114432 [debug] [MainThread]: An error was encountered while trying to flush usage events
