@@ -1,0 +1,31 @@
+version: 2
+
+sources:
+  - name: bq_user_events
+    tables:
+      - name: raw_events
+
+models:
+  - name: hub_user
+    description: "Unique users"
+    columns:
+      - name: user_id
+        tests: [not_null, unique]
+
+  - name: hub_event
+    description: "Unique events"
+    columns:
+      - name: event_id
+        tests: [not_null, unique]
+
+  - name: link_user_event
+    description: "Relationships between users and events"
+    columns:
+      - name: hub_user_id
+        tests: [not_null]
+      - name: hub_event_id
+        tests: [not_null]
+
+  - name: sat_event_metadata
+    description: "Context data for each event"
+

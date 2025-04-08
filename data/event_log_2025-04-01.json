@@ -1,0 +1,82 @@
+[
+  {
+    "event_id": "evt-001",
+    "user_id": "user-001",
+    "event_type": "click",
+    "page": "/home",
+    "timestamp": "2025-04-01T10:15:00Z",
+    "device_type": "mobile"
+  },
+  {
+    "event_id": "evt-002",
+    "user_id": "user-002",
+    "event_type": "scroll",
+    "page": "/products",
+    "timestamp": "2025-04-01T10:16:00Z",
+    "device_type": "desktop"
+  },
+  {
+    "event_id": "evt-003",
+    "user_id": "user-003",
+    "event_type": "click",
+    "page": "/cart",
+    "timestamp": "2025-04-01T10:17:00Z",
+    "device_type": "mobile"
+  },
+  {
+    "event_id": "evt-004",
+    "user_id": "user-001",
+    "event_type": "purchase",
+    "page": "/checkout",
+    "timestamp": "2025-04-01T10:18:00Z",
+    "device_type": "tablet"
+  },
+  {
+    "event_id": "evt-005",
+    "user_id": "user-002",
+    "event_type": "click",
+    "page": "/products",
+    "timestamp": "2025-04-01T10:19:00Z",
+    "device_type": "desktop"
+  },
+  {
+    "event_id": "evt-006",
+    "user_id": "user-004",
+    "event_type": "scroll",
+    "page": "/home",
+    "timestamp": "2025-04-01T10:20:00Z",
+    "device_type": "mobile"
+  },
+  {
+    "event_id": "evt-007",
+    "user_id": "user-005",
+    "event_type": "click",
+    "page": "/about",
+    "timestamp": "2025-04-01T10:21:00Z",
+    "device_type": "mobile"
+  },
+  {
+    "event_id": "evt-008",
+    "user_id": "user-006",
+    "event_type": "purchase",
+    "page": "/checkout",
+    "timestamp": "2025-04-01T10:22:00Z",
+    "device_type": "desktop"
+  },
+  {
+    "event_id": "evt-009",
+    "user_id": "user-007",
+    "event_type": "click",
+    "page": "/search",
+    "timestamp": "2025-04-01T10:23:00Z",
+    "device_type": "tablet"
+  },
+  {
+    "event_id": "evt-010",
+    "user_id": "user-003",
+    "event_type": "click",
+    "page": "/cart",
+    "timestamp": "2025-04-01T10:24:00Z",
+    "device_type": "mobile"
+  }
+]

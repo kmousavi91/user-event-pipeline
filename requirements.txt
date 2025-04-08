@@ -1,0 +1,4 @@
+dbt-bigquery
+google-cloud-storage
+google-cloud-bigquery
+pandas
